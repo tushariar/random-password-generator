@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+}
+
+.container, 
+.container form, 
+.container form .type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+    /* border: 2px solid red; */
+    background-color: rgb(24, 116, 236);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(47, 128, 237, 0.5);
+}
+
+.container form {
+    flex-direction: column;
+}
+.container form h1 {
+    color: #fff;
+}
+.container form .type{
+    flex-direction: row;
+}
+.container form .form-group{
+    padding: 5px;
+    margin: 5px;
+}
+.container form .form-group label{
+    cursor: pointer;
+    color: white;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background-color: dodgerblue;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#passField{
+    background-color: #fff;
+    font-size: 22px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.bxs-copy{
+    cursor: pointer;
+}
+#yourPass{
+    /* display: none; */
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+@media screen and (max-width:530px) {
+    .container {
+        width: 95%;
+    }
+}
